@@ -1,22 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <title>VOXA AI</title>
-  <style>
-    :root { color-scheme: light dark; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    body { max-width: 680px; margin: 0 auto; padding: 40px 22px 72px; }
-    a { color: LinkText; display: block; margin: 1rem 0; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Ask by voice or text, listen to answers, summarize, and turn text into audio with VOXA AI for iPhone and iPad.">
+<title>VOXA AI — Voice &amp; Reader</title>
+<style>
+:root { color-scheme: light dark; font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; --bg: #faf8ff; --ink: #241936; --muted: #625a70; --card: #fff; --accent: #6330b6; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); }
+.wrap { max-width: 1080px; margin: auto; padding: 28px 24px 64px; }
+nav { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+nav strong { letter-spacing: .1em; }
+nav div { display: flex; gap: 24px; flex-wrap: wrap; }
+a { color: var(--accent); overflow-wrap: anywhere; text-underline-offset: .2em; }
+.hero { margin: 68px 0 48px; padding: clamp(24px, 5vw, 64px); border-radius: 28px; background: linear-gradient(135deg, #eee4ff, #fbe9f2); }
+.eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .1em; font-size: .8rem; }
+h1 { font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.06; letter-spacing: -.05em; margin: 20px 0; max-width: 750px; }
+.lead { font-size: 1.2rem; max-width: 660px; color: var(--muted); }
+.cta { display: inline-block; background: var(--accent); color: #fff; padding: 14px 24px; border-radius: 12px; text-decoration: none; font-weight: 650; margin: 12px 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 20px; }
+article { background: var(--card); padding: 26px; border: 1px solid #8883; border-radius: 20px; }
+h2 { line-height: 1.2; letter-spacing: -.025em; margin-top: 0; }
+article p, .details p { color: var(--muted); }
+.details { padding: 42px 0 0; max-width: 800px; }
+footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #8884; color: var(--muted); font-size: .9rem; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+@media (prefers-color-scheme: dark) { :root { --bg: #14101d; --ink: #f5efff; --muted: #bdb3ce; --card: #20192c; --accent: #c6a1ff; } .hero { background: linear-gradient(135deg, #302044, #322037); } .cta { color: #241936; } }
+</style>
 </head>
 <body>
-  <main>
-    <h1>VOXA AI</h1>
-    <p>Privacy and support information.</p>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="support.html">Support</a>
-  </main>
+<div class="wrap">
+<nav aria-label="Main"><strong>VOXA AI</strong><div><a href="support.html">Support</a><a href="privacy-policy.html">Privacy Policy</a></div></nav>
+<main>
+<section class="hero">
+<p class="eyebrow">VOICE &amp; READER · FOR IPHONE &amp; IPAD</p>
+<h1>Ask. Listen.<br>Keep your ideas.</h1>
+<p class="lead">Ask by voice or text. Listen to answers, find the key points, and turn your own text into audio you can save or share.</p>
+<a class="cta" href="https://apps.apple.com/app/id6832004843">View on the App Store</a>
+<p>On-device AI on supported Apple Intelligence devices.</p>
+</section>
+<section class="grid" aria-label="What you can do">
+<article><h2>Start a conversation</h2><p>Speak or type a request, continue the conversation, and return to useful answers in your chat history.</p></article>
+<article><h2>Give text a voice</h2><p>Listen with system voices, follow highlighted text, and export audio to save or share.</p></article>
+<article><h2>Find what matters</h2><p>Summarize text, save useful results, and keep your ideas close at hand.</p></article>
+</section>
+<section class="details"><h2>Get started free. Go further with Pro.</h2><p>Free daily usage is available for conversations, text reading, and summaries. VOXA Pro removes those usage limits. Weekly and yearly auto-renewable plans unlock the same Pro features. Current prices and any eligible offers are shown in the app before purchase.</p><p>Manage or cancel renewal in your Apple Account subscription settings. Use Restore Purchases in VOXA to restore an existing Pro subscription. <a href="support.html">Get help with your plan.</a></p></section>
+<section class="details"><h2>Built around on-device processing</h2><p>No VOXA account is required. AI responses use Apple Foundation Models on device when available. Your chat history, drafts, saved results, and exported audio are stored locally. <a href="privacy-policy.html">Read our Privacy Policy.</a></p></section>
+<section class="details"><h2>Check your device before using AI</h2><p>VOXA requires iOS or iPadOS 26.0 or later. AI conversations and summaries require an Apple Intelligence-capable device, Apple Intelligence enabled, downloaded models, and a supported language and region. Availability is checked in the app. Pro does not enable AI on unsupported devices.</p><p>Text Reader uses system voices independently of AI model availability. Voice input requires microphone access and supported Apple speech assets. Some system assets and voices may need to download. <a href="support.html">See setup and troubleshooting help.</a></p></section>
+</main>
+<footer>VOXA AI: Voice &amp; Reader · <a href="support.html">Support</a> · <a href="privacy-policy.html">Privacy Policy</a></footer>
+</div>
 </body>
 </html>
